@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <script>
+        /*1. Crie uma função que recebe 3 notas de um aluno por parâmetro e
+        uma letra. Se a letra for A a função deve calcular a média aritmética,
+        se for P, a média ponderada (peso: 5, 3 e 2).*/
+
+        function calc (n1, n2, n3, letter){
+            if(letter == "a") {
+                document.write(n1 + n2 + n3 / 3);
+            } else if( letter == "p") {
+                document.write((n1 * 5 + n2 *3 + n3 * 2) / 10)
+            } else {
+                document.write("Letra não permitida")
+            }
+        }
+
+        // calc( 5, 2, 8, "a");
+        calc(
+            parseInt(prompt("Digite o primeiro valor")),
+            parseInt(prompt("Digite o segundo valor")),
+            parseInt(prompt("Digite o terceiro valor")),
+            prompt("Digite a letra A para calcular a média aritmética. \n Digite a leta P para calcular a média pondera")
+            );
+
+    </script>
+</body>
+</html>
